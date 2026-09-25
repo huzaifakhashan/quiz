@@ -91,22 +91,6 @@ class _Mark extends StatelessWidget {
           child: Stack(
             clipBehavior: Clip.none,
             children: [
-              // Bubble tail (bottom-left).
-              Positioned(
-                left: 150,
-                top: 60 + bubbleH - 110,
-                child: Transform.rotate(
-                  angle: pi / 4,
-                  child: Container(
-                    width: 170,
-                    height: 170,
-                    decoration: BoxDecoration(
-                      color: bubbleColor,
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                  ),
-                ),
-              ),
               // Bubble body.
               Positioned(
                 left: 60,
@@ -134,6 +118,22 @@ class _Mark extends StatelessWidget {
                           offset: const Offset(0, 22),
                           child: questionMark,
                         ),
+                ),
+              ),
+              // Bubble tail (bottom-left).
+              Positioned(
+                left: 150,
+                top: 60 + bubbleH - 110,
+                child: Transform.rotate(
+                  angle: pi / 4,
+                  child: Container(
+                    width: 170,
+                    height: 170,
+                    decoration: BoxDecoration(
+                      color: bubbleColor,
+                      borderRadius: BorderRadius.circular(28),
+                    ),
+                  ),
                 ),
               ),
               // Gold star badge (top-right).
