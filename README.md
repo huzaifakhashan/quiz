@@ -110,15 +110,12 @@ _q(
 flutter test
 ```
 
-<div dir="rtl">
+## 📥 Download the App
 
-بتغطي منطق الاختبار (النقاط، والسلسلة، ووسائل المساعدة، والتخطي)، وسلامة بنك الأسئلة، واختبار كامل للتطبيق من الشاشة الرئيسية لحد مراجعة الإجابات على حجم موبايل وحجم ديسكتوب.
+👉 [Download Quis APK V1.0.0](https://github.com/huzaifakhashan/quiz/releases/tag/v1.0.0)
 
-### إعادة توليد لقطات الشاشة
+👉 [Download Quiz exe v1.0.0](https://github.com/huzaifakhashan/quiz/releases/tag/V1.0.0.0)
 
-اللقطات بتتولّد تلقائياً من اختبار بيلعب اختبار كامل وبيحفظ صورة لكل شاشة بمجلد `docs/screenshots/`:
-
-</div>
 
 ```bash
 flutter test test/screenshots_test.dart --dart-define=SCREENSHOTS=true
